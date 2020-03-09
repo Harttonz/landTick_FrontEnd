@@ -1,0 +1,52 @@
+.editbuttonIndex {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+.formInput {
+    margin-top: 20px;
+    text-align: center;
+}
+.loggedES {
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    background:lightgreen;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    left: 200px;
+    margin-bottom: 12px;
+    outline:none;
+}
+
+.infologinES {
+    font-size: 15px;
+    color: lightskyblue;
+    margin-left: 110px;
+    margin-bottom: 5px;
+}
+.clickES {
+    margin-left: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.InputFormES{
+    width:450px;
+    height:40px;
+    margin:auto 20px;
+    margin-top:10px;
+    background-color:lightgrey;
+    border-radius:20px;
+    padding-left:9px;
+    outline:none;
+}
+ .rightLogoES {
+     position: relative;
+     width: 300px;
+     height: 40px;
+     margin-bottom:20px;
+ }
+ .form-content{
+     border-radius:20px;
+     }

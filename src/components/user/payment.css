@@ -1,0 +1,432 @@
+.bckgrdmainmenuPayment{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    float: left;
+}
+
+.navpayment {
+    font-family: "Tomorrow", sans-serif;
+    font-size: 40px;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 3px 10px grey;
+    position: relative;
+}
+
+.accountpayment {
+    position: relative;
+    width: 180px;
+    height: 80px;
+    left: 1100px;
+}
+
+.trainlogofirstpayment {
+    margin-left: 20px;
+    width: 200px;
+    height: 50px;
+}
+.myticketpayment {
+    position: relative;
+    top: 40px;
+    left: 50px;
+    font-size:28px;
+    font-weight: bolder;
+}
+.detailsPrice{
+    position: relative;
+    top: 70px;
+    left:-60px;
+    margin-bottom:20px;
+    font-size: 28px;
+    font-weight: bolder;
+}
+.notespy1{
+    width:700px;
+    height:160px;
+    background-color:#EEEEEE;
+    position: relative;
+    left:53px;
+    top:40px;
+    border:2px solid lightgrey;
+    border-radius:8px;
+}
+.notespy2 {
+    width: 700px;
+    height: 160px;
+    background-color:white;
+    position: relative;
+    left: 53px;
+    top: 60px;
+    border: 2px solid lightgrey;
+    border-radius:8px;
+}
+.dangerpayment{
+    width:45px;
+    height:45px;
+    margin-left:40px;
+    margin-top:30px;
+    position: relative;
+}
+.infopayment{
+    position:absolute;
+    margin-left:100px;
+    margin-top:45px;
+    margin-bottom:50px;
+}
+.nopayment{
+    font-weight: bold;
+    position: relative;
+    top:100px;
+    left:100px;
+}
+ .myticketlogopayment {
+    width: 200px;
+    height: 40px;
+    background-color:white;
+}
+.pcicpy {
+    position: relative;
+    width:220px;
+    left:15px;
+    top:26px;
+    font-size:15px;
+    font-weight:bold;
+}
+.noCicpy {
+    position: relative;
+    ;
+    left: 15px;
+    top: -10px;
+    color: darkgrey;
+}
+.pOrderspy {
+    position: relative;
+    left:225px;
+    top:5px;
+    font-size:15px;
+    font-weight:bold;
+}
+.noOrderspy {
+    position: relative;
+    left: 225px;
+    top: -36px;
+    color: darkgrey;
+}
+.pHppy {
+    position: relative;
+    left: 340px;
+    top:-16px;
+    font-size: 15px;
+    font-weight:bold;
+}
+.noHppy {
+    position: relative;
+    left: 340px;
+    top: -60px;
+    color: darkgrey;
+    float: left;
+}
+
+.pemail {
+    position: relative;
+    left:470px;
+    top: -37px;
+    font-size: 15px;
+    font-weight:bold;
+}
+
+.noEmailpy {
+    position: absolute;
+    left: 470px;
+    top: 120px;
+    color: darkgrey;
+}
+
+.hrlinepy {
+    width: 696px;
+    border: 1px solid lightgrey;
+    position: relative;
+    top:-20px;
+}
+.notespy3 {
+    width: 400px;
+    height: 120px;
+    background-color: white;
+    position: relative;
+    left: 53px;
+    top: 80px;
+    border: 2px solid lightgrey;
+    border-radius: 8px;
+}
+.notes3pyargo {
+    position: relative;
+    margin-left:20px;
+    margin-top:19px;
+    font-weight:bold;
+    font-size:15px;
+}
+.notes3pyRp{
+    position: relative;
+    margin-left:260px;
+    margin-top:-24px;
+}
+.notes3pyboxgrey{
+    width:100%;
+    height:50px;
+    margin-top:30px;
+    background-color:lightgrey;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+    position:absolute;
+    float: left;
+}
+.notes3pytotal{
+    position: relative;
+    margin-left:20px;
+    margin-top:18px;
+    font-weight:bold;
+    font-size:15px;
+}
+.notes3pytotalrp{
+    position: relative;
+    margin-left:260px;
+    margin-top:-24px;
+    font-weight:bolder;
+}
+.boxImageuploaded{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    left: 500px;
+    top: -140px;
+    border: 2px solid lightgrey;
+}
+.proofPy {
+     width:100%;
+     height:100%;
+}
+
+
+.notespaynow{
+    width:400px;
+    height: 35px;
+    font-size:15px;
+    position: relative;
+    left:540px;
+    top:100px;
+}
+.piecesofpayments{
+    position: absolute;;
+    left:900px;
+    top:160px;
+    width:500px;
+    height:400px;
+    background-color:white;
+    border-radius:12px;
+    border: 2px solid lightgrey;
+    
+}
+.upperpiecesofpayments{
+    background: #EEEEEE;
+    width:100%;
+    height:100px;
+    border-top-left-radius:12px;
+    border-top-right-radius:12px;
+}
+.depTimepayment {
+    position: absolute;
+    left:100px;
+    top:220px;
+    font-weight: bold;
+}
+.depdatetimepayment {
+    position: absolute;
+    left:100px;
+    top: 250px;
+    color: darkgrey;
+}
+.arrvTimepayment {
+    position: absolute;
+    left: 100px;
+    top: 330px;
+    font-weight: bold;
+}
+
+.arrvdatetimepayment {
+    position: absolute;
+    left: 100px;
+    top: 360px;
+    color: darkgrey;
+}
+.linethroughpayment {
+    width: 50px;
+    height: 190px;
+    position: absolute;
+    top: 200px;
+    left: 30px;
+}
+.depPlacepayment {
+    position: absolute;
+    left:300px;
+    top: 220px;
+    font-weight: bold;
+}
+
+.notdepPlacepayment {
+    position: absolute;
+    left:300px;
+    top: 250px;
+    color: darkgrey;
+}
+
+.destPlacepayment {
+    position: absolute;
+    left:300px;
+    top: 330px;
+    font-weight:bold;
+}
+
+.notdestPlacepayment {
+    position: absolute;
+    left:300px;
+    top: 360px;
+    color: darkgrey;
+}
+
+.TheTrain {
+    position: relative;
+    left:30px;
+    font-size: 35px;
+    top: 10px;
+}
+.datetimenowpayment {
+    position: relative;
+    left: 30px;
+    top: 10px;
+    font-size:20px;
+    color: darkgrey;
+}
+.day{
+    font-weight:bolder;
+}
+.argopayment {
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+
+.typeArgopayment {
+    width: 120px;
+    height: 20px;
+    position: relative;
+    left: 30px;
+    top: 40px;
+}
+.payScannerBox{
+    width:90px;
+    height:90px;
+    border:2px solid lightgrey;
+    position: absolute;
+    top:4px;
+    left:400px;
+    box-sizing:border-box;
+}
+.scannerPict{
+    width:90px;
+    height:90px;
+}
+.pendingComponent{
+    position: absolute;
+    width:300px;
+    top:38px;
+    z-index:9999;
+    left:-52px;
+    outline:none;
+}
+
+/* dropdown */
+.dropbtnPay {
+    color: white;
+    border: none;
+    width: 100px;
+    height: 80px;
+    position: relative;
+    left: 1150px;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.userPay {
+     position: relative;
+     left:1100px;
+     width: 100px;
+     text-align: right;
+     height: 20px;
+     float: left;
+     margin-right:20px;
+     margin-top:10px;
+     font-size:40px;
+     color: #EC7A7A
+}
+
+.dropdownPay {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 12px;
+    margin-right: 120px;
+}
+
+.dropdown-contentPay {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 900px;
+    background-color: #f1f1f1;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.dropdown-contentPay .link1Pay {
+    padding: 12px 16px;
+    width: 450px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contentPay .link1Pay:hover {
+    background-color: #ddd;
+    border-radius: 12px;
+    width: 450px;
+}
+
+.dropdownPay:hover .dropdown-contentPay {
+    display: block;
+}
+
+.ticketbuttonPay {
+    width: 45px;
+    height: 45px;
+}
+
+.logoutbuttonPay {
+    width: 45px;
+    height: 45px;
+}
+
+.paymentbuttonPay {
+    width: 45px;
+    height: 45px;
+}

@@ -1,0 +1,32 @@
+.paynowPayment {
+    width: 400px;
+    height: 35px;
+    font-size: 20px;
+    background: linear-gradient(90deg, #EC7AB7 -0.6%, #EC7A7A 100%);
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    left: 50px;
+    top: 90px;
+    outline:none;
+}
+.model-content{
+    position:absolute;
+    padding-top:10x;
+    border-radius:24px;
+    width:400px !important;
+}
+.pendingstatus{
+    position:relative;
+    height:150px;
+    font-size:20px; 
+    margin-top:60px;
+    text-align:center;
+}
+.here{
+    text-decoration:underline ;
+    color: blue;
+    cursor: pointer;
+    margin-left:4px
+
+;}

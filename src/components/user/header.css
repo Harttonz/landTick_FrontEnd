@@ -1,0 +1,39 @@
+.header{
+    background: linear-gradient(180deg, #ec7a7a 0%, #ec7ab7 100%);
+    font-style: italic;
+    width: 100%;
+    height:250px;
+    position: relative;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+.greet{
+    position: absolute;;
+    color:white;
+    font-size:40px;
+    left:30px;
+    top: 15px;
+}
+.offer{
+    position: absolute;
+    color:white;
+    font-size:18px;
+    left:30px;
+    top:90px;
+}
+.log {
+    position: absolute;
+    color: white;
+    font-size:18px;
+    left: 30px;
+    top: 130px;
+}
+.banner1{
+    position: relative;
+    left:870px;
+    top:25px;
+ }
+ .banner2 {
+     position: relative;
+     left:320px;
+     top:10px;
+ }

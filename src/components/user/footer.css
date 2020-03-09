@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Fondamento&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Tomorrow&display=swap");
+.footer {
+  background: linear-gradient(180deg, #ec7a7a 0%, #ec7ab7 100%);
+  width: 100%;
+  height:70px;
+  top:630px;
+  position:relative;
+  background-color:rgb(0,0,0,0.8);
+}

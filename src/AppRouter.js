@@ -1,24 +1,26 @@
-import React,{Component} from "react";
+import React from "react";
 import {BrowserRouter,Route,Switch} from "react-router-dom";
-import Beranda from "./components/beranda";
-import ModalLogin from "./components/modalLogin";
-import Profile from "./components/profile";
-import Dashboard from "./components/Dashboard";
-import Addpet from "./components/Addpet";
-import EditProfile from "./components/editProfile";
-import Payment from "./components/payment";
-
-const AppRouter =()=>(
-    <BrowserRouter>
+import User from "./components/user/userIndex";
+import Dashboard from "./components/user/Dashboard";
+import Myticket from "./components/user/myTicket";
+import MyticketApproved from"./components/user/myticket_approved";
+import Payment from "./components/user/payment";
+import Detailticket from "./components/user/detailTicket";
+import Admin from "./components/admin/indexAdmin";
+import Addticket from "./components/admin/addticket"
+const AppRouter = () => (
+  <BrowserRouter>
     <Switch>
-        <Route path="/" exact component = {Beranda}/>
-        <Route path="/login" component={ModalLogin}/>
-        <Route path="/dashboard" component={Dashboard}/>   
-        <Route path="/addpet" component={Addpet}/>
-        <Route path="/profile" component={Profile}/>
-        <Route path="/editprofil"component={EditProfile}/>
-        <Route path="/payment" component={Payment}/>
+      <Route path="/" exact component={User} />
+      <Route path="/dashboard" component={Dashboard} />
+      <Route path="/myticket" component={Myticket} />
+      <Route path="/myticketApproved" component={MyticketApproved} />
+      <Route path="/payment" component={Payment} />
+      <Route path="/detailticket" component={Detailticket} />
+      {/* router fo admin UI */}
+      <Route path="/admin" component={Admin} />
+      <Route path="/addticket" component={Addticket} />
     </Switch>
-     </BrowserRouter>
+  </BrowserRouter>
 ); 
 export default AppRouter;
