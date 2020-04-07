@@ -8,8 +8,8 @@ class Header extends Component {
         <div className="greet">Good morning,Ticket Seekers</div>
         <div className="offer">Do you want to back Hometown with Good Deal</div>
         <div className="log">Login And Register Now</div>
-        <img src={require("../../img/portal.png")} className="banner1"></img>
-        <img src={require("../../img/portal.png")} className="banner2"></img>
+        <img src={require("../../img/portal.png")} className="banner1"/>
+        <img src={require("../../img/portal.png")} className="banner2"/>
       </div>
     );
   }

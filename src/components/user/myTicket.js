@@ -5,57 +5,13 @@ import Header from "./header";
 import ModalLogin from "./modalLogin";
 import Register from "./Register";
 import {Link} from "react-router-dom";
+import NavHeader from "../navHeader/navHeader";
 
 export default class Myticket extends Component {
   render() {
     return (
       <div className="bMyticket">
-        <div className="navmyticket">
-          <img
-            src={require("../../img/trainlogo.png")}
-            className="trainlogofirstMT"
-          ></img>
-          <div class="dropdownMT">
-            <div className="userMT">Harttonz</div>
-            <img
-              src={require("../../img/account.png")}
-              className="dropbtnMT"
-              alt="dropbtnMT"
-            ></img>
-            <div class="dropdown-contentMT">
-              <div className="link1MT">
-                <Link to="/myticket">
-                  <img
-                    src={require("../../img/ticket11.png")}
-                    className="ticketbuttonMT"
-                    alt="ticketbuttonMT"
-                  ></img>
-                </Link>
-                <div>My Ticket</div>
-              </div>
-              <div className="link1MT">
-                <Link to="/payment">
-                  <img
-                    src={require("../../img/payment11.png")}
-                    className="paymentbuttonMT"
-                    alt="paymentbuttonMT"
-                  ></img>
-                </Link>
-                <div>Payment</div>
-              </div>
-              <div className="link1MT">
-                <Link to="user">
-                  <img
-                    src={require("../../img/logout.png")}
-                    alt="logoutbuttonMT"
-                    className="logoutbuttonMT"
-                  ></img>
-                </Link>
-                <div className="logouttextMT">Logout</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <NavHeader />
         <div className="myticketMT">My Ticket</div>
         <div className="mytktMT">
           <img

@@ -6,6 +6,9 @@
   justify-content: center;
   position: relative;
 }
+.navigationIndex{
+  width:100%;
+}
 .navindex{
   font-family: "Tomorrow", sans-serif;
   font-size:30px;
@@ -13,25 +16,35 @@
   height:50px;
   width:100%;
 }
-.boxfloatindex{
-  position:absolute;
+.searchBox{
+  position: relative;
   height:200px;
-  width:1400px;
+  width:90%;
+  top:-10px;
+  left:65px;
+  border-radius:8px;
   background: #FFFFFF;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
-  top:280px;
-  left:100px;
   box-sizing:border-box;
+  display:flex;
 }
-.bfleftindex{
-  position: relative;
+.bfleftIndex{
   height:100%;
-  width:350px;
-  background-color:#F2F2F2;
-  float: left;
+  width:25%;
+  background-color:#CCD6DD;
+  border-top-left-radius:8px;
+  border-bottom-left-radius:8px;
+}
+.bfrightIndex{
+  height:100%;
+  width:100%;
+  background-color: #E1E8ED;
+  border-top-right-radius:8px;
+  border-bottom-right-radius:8px;
 }
 .bfupperindex{
   position: relative;
+  border-top-left-radius:8px;
   width:100%;
   height:60px;
   background-color: #FFFFFF;
@@ -49,88 +62,76 @@
   height:50px;
 }
 .traintextindex {
-  margin-left:12px;
-  margin-top:12px;
   float: left;
+  margin-left:7px;
+  margin-top:14px;
  
 }
 .cycleindex{
-  width:100;
   height:100px;
   border-radius:50%;
   background-color:gradient(90deg, #EC7AB7 14%, #EC7A7A 100%);
 }
 .fromindex{
-  display:inline-block;
-  font-weight:bold;
   margin-left:20px;
-  margin-bottom:10px;
+  font-weight:bold;
 }
 .textfromindex{
   margin-left:20px;
   border-radius:8px;
-  width:400px;
-  margin-bottom:10px;
+  outline: none;
+  padding-left:8px;
+}
+.textdepartureindex1 {
+  margin-left:33px;
+  border-radius: 8px;
   outline: none;
 }
-.textdepartureindex {
-  margin-left: 20px;
+.textdepartureindex2 {
   border-radius: 8px;
-  width:200px;
   outline: none;
-  float: left;
 }
 .exchangelogoindex{
   width:40px;
   height:40px;
-  left:820px;
-  position: absolute;
-  top:80px;
+  margin-top:-10px;
+  margin-left:-65px;
   cursor: pointer;
 }
 
 .checkppindex{
-  margin-left:30px;
+  margin-left:18px;
   width:15px;
   height:15px;
+  margin-top:10px;
 }
 .fromdestinationindex{
-   position:absolute;
-   left:1000px;
-   top:333px;
    font-weight: bold;
+   margin-left:54px;
 }
-.textdesindex {
-  width: 400px;
+.textdesindex{
   outline: none;
-  position:absolute;
-  left:1000px;
-  top:368px;
   border-radius: 8px;
+  margin-left:-280px;
+  padding-left:8px;
 }
 .adultindex {
-  position: absolute;
-  left: 1000px;
-  top: 460px;
   font-weight: bold;
+  margin-left:17%;
+} 
+.babyindex {
+  font-weight: bold;
+  margin-left:-30%;
 }
-
 .ageselect1index{
   width: 100px;
   outline: none;
   position: absolute;
-  left: 1000px;
+  left: 200px;
   top: 445px;
   border-radius: 8px;
   text-align:center;
 }
-.adultindex {
-  position: absolute;
-  left: 1000px;
-  top: 412px;
-  font-weight: bold;
-}
-
 .ageselect2index{
   width: 100px;
   outline: none;
@@ -140,112 +141,135 @@
   border-radius: 8px;
   text-align:center;
 }
-.babyindex {
-  position: absolute;
-  left: 1200px;
-  top: 412px;
-  font-weight: bold;
-}
 .searchindex {
-  position: absolute;
-  left: 1350px;
-  top: 434px;
+  position: relative;
+  top:-60px;
+  left:120px;
+  height:40px;
   font-weight: bold;
   background-color:#EC7A7A;
   border-radius:12px;
   color:white;
 }
-.passegerindex{
+.AdultQty{
+  font-size:24px;
+  background-color: rgb(89, 128, 167);
+  width:15%;
+  height:40px;
+  margin-left:50%;
+  margin-top:-20px;
+  display:flex;
+  justify-content:space-evenly;
+  justify-items: center;
+  align-items:center;
   position: relative;
-  top:80px;
-  display: inline;
-  left :95px;
-}
-.trainNameindex{
+  top:-40px;
   float: left;
-  margin-left:120px;
-  margin-right:170px;
+  left:-100px;
+  border-radius: 8px;
 }
-.arriveindex{
+.BabyQty{
+  font-size:24px;
+  background-color: rgb(89, 128, 167);
+  width:15%;
+  height:40px;
+  padding:4px;
+  margin-left:51%;
+  margin-top:-20px;
+  display:flex;
+  justify-content:space-evenly;
+  justify-items: center;
+  align-items:center;
+  position: relative;
+  top:-60px;
   float: left;
-  margin-right:170px;
-
+  left:80px;
+  border-radius: 8px;
 }
-.durationindex{
-  float: left;
-  margin-right:170px;
+.min1{
+  background:#5b9291;
+  color:white; 
+  align-items:center;
+  justify-content:center;
+  width:30px;
+  height:30px;
+  border-radius:10px;
 }
-.priceindex{
-  float: left;
-   margin-right:170px;
+.min1 > img {
+ cursor: pointer;
+ height:20px; 
+ width:20px;
+ margin-bottom:19px;
+ margin-left:-2px;
 }
-
-.departindex {
-  float: left;
-  margin-right: 170px;
+.qty1{
+  color:white;
+  margin-top:10px;
+  margin-left:12px;
+  margin-right:12px;
+}
+.plus1{
+  background:#5b9291;
+  color:white; 
+  width:30px;
+  height:30px;
+  border-radius:10px;
+}
+.plus1 > img {
+  height:20px;
+  width:20px;
+  margin-bottom:19px;
+  margin-left:-2px;
+}
+.min2{
+  background:#5b9291;
+  color:white; 
+  width:30px;
+  height:30px;
+  border-radius:10px;
+}
+.min2> img {
+ cursor: pointer;
+ height:20px; 
+ width:20px;
+ margin-bottom:19px;
+ margin-left:-2px;
+}
+.qty2{
+  color:white;
+  margin-top:10px;
+  margin-left:12px;
+  margin-right:12px;
+}
+.plus2{
+  background:#5b9291;
+  color:white; 
+  width:30px;
+  height:30px;
+  border-radius:10px;
+  outline:none;
+}
+.plus2 > img {
+  height:20px;
+  width:20px;
+  margin-bottom:19px;
+  margin-left:-2px;
 }
 .show1index{
-  width: 1400px;
   height: 100px;
   border: 2px solid grey;
   background-color: white;
   position: relative;
-  top: 150px;
-  left: 95px;
   font-weight: bold;
-  text-align: center;
-}
-.show2index{
-  width: 1400px;
-  height: 100px;
-  border: 2px solid grey;
-  background-color: white;
-  position: relative;
-  top: 160px;
-  left: 95px;
-  font-weight: bold;
-}
-.show3index{
-  width: 1400px;
-  height: 100px;
-  border: 2px solid grey;
-  background-color: white;
-  position: relative;
-  top: 170px;
-  left: 95px;
-  font-weight: bold;
-}
-.v1index{
-  float: left;
-  margin-left: 120px;
-  margin-right: 170px;
-  margin-top:30px;
-}
-.v2index{
-  float: left;
-  margin-left:45px;
-  margin-top:30px;
+  margin-bottom:10px;
+  padding:30px;
+  width:90%;
+  top:200px;
+  left :95px;
+  font-weight:bolder;
+  font-size:20px;
 
 }
-
-.v3index{
-  float: left;
-  margin-left:200px;
-  margin-top:30px;
-}
-
-.v4index{
-  float: left;
-  margin-left:169px;
-  margin-top:30px;
-}
-.v5index{
-  float: left;
-  margin-left:189px;
-  margin-top:30px;
-  color:#EC7A7A;
-}
-
 .v11index{
   float: left;
   margin-left: 120px;
@@ -279,8 +303,82 @@
   color: #EC7A7A;
 }
 .trainindex {
-  position: relative;
-  left: 20px;
-  font-size: 35px;
+  font-size:25px;
   font-weight: bold;
+  margin-left:10px;
+}
+.footer {
+  background: linear-gradient(180deg, #ec7a7a 0%, #ec7ab7 100%);
+  width: 100%;
+  height: 70px;
+  top: 630px;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+/* product css*/
+.ListTicketTitle{
+  position:relative;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  width:85%;
+  height:50px;
+  left:7%;
+  background-color: grey;
+  top:10px;
+  color:white;
+  margin-bottom:20px;
+  font-size: 15px;
+  font-weight:bolder;
+  padding:30px 30px;
+  border-radius:10px;
+}
+.ListTicketContentTitle{
+  width:13%;
+  background-color: #878f99;
+  margin:5px;
+  height:25px;
+  text-align:center;
+  padding:auto;
+  border-radius:20px;
+}
+.ContentStartStation{
+  margin-top:10px;
+}
+.notice{
+  color:sandybrown;
+}
+.ListTicket{
+  position:relative;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  width:85%;
+  height:80px;
+  left:7%;
+  margin-top:5px;
+  background-color: grey;
+  color:white;
+  font-size:15px;
+  font-weight:bolder;
+  padding:30px 30px;
+  border-radius:10px;
+}
+.ListTicketContent {
+  width:13%;
+  background-color: #878f99;
+  margin:5px;
+  height:25px;
+  text-align:center;
+  padding:auto;
+}
+.BuyTicket{
+  width:13%;
+  margin:5px;
+  height:25px;
+  text-align:center;
+  padding:auto;
+  /* border-radius:20px; */
 }

@@ -33,7 +33,7 @@
   font-size:20px;
   background: linear-gradient(90deg, #EC7AB7 -0.6%, #EC7A7A 100%);
   position: absolute;
-  left:1435px;
+  left:90%;
   top:10px;
   border-radius:10px;
   color:white
@@ -45,6 +45,12 @@
 div.model-content{
   border-radius:2.3em;
 }
+.errorMsg {
+  color: red;
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+
 .logged{
   width:100px;
   height:35px;

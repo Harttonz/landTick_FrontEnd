@@ -1,58 +1,13 @@
 import React,{Component} from "react";
 import "./payment.css";
 import Pending from "./pendingFrame";
-import {Link} from "react-router-dom";
+import NavHeader from "../navHeader/navHeader";
 export default class Payment extends Component{
   render(){
       return (
         <div>
           <div className="bckgrdmainmenuPayment">
-            <nav className="navpayment">
-              <img
-                src={require("../../img/trainlogo.png")}
-                className="trainlogofirstpayment"
-              ></img>
-              <div class="dropdownPay">
-                <div className="userPay">Harttonz</div>
-                <img
-                  src={require("../../img/account.png")}
-                  className="dropbtnPay"
-                  alt="dropbtnPay"
-                ></img>
-                <div class="dropdown-contentPay">
-                  <div className="link1Pay">
-                    <Link to="/myticket">
-                      <img
-                        src={require("../../img/ticket11.png")}
-                        className="ticketbuttonPay"
-                        alt="ticketbuttonPay"
-                      ></img>
-                    </Link>
-                    <div>My Ticket</div>
-                  </div>
-                  <div className="link1Pay">
-                    <Link to="/payment">
-                      <img
-                        src={require("../../img/payment11.png")}
-                        className="paymentbuttonPay"
-                        alt="paymentbuttonPay"
-                      ></img>
-                    </Link>
-                    <div>Payment</div>
-                  </div>
-                  <div className="link1Pay">
-                    <Link to="user">
-                      <img
-                        src={require("../../img/logout.png")}
-                        alt="logoutbuttonPay"
-                        className="logoutbuttonPay"
-                      ></img>
-                    </Link>
-                    <div className="logouttextPay">Logout</div>
-                  </div>
-                </div>
-              </div>
-            </nav>
+            <NavHeader/>
             <div className="myticketpayment">Invoice</div>
             <div className="notespy1">
               <div className="infopayment">

@@ -1,11 +1,24 @@
 .editbuttonIndex {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height:30px;
     cursor: pointer;
+    margin:auto 8px;
 }
 .formInput {
     margin-top: 20px;
     text-align: center;
+}
+select.form-control{
+   width:439px;
+   height:40px;
+   margin:auto 20px;
+   margin-top:10px;
+   padding-left:9px;
+   outline:none;       
+}
+.textStatus{
+    margin-left:24px;
+    font-size: 17px;
 }
 .loggedES {
     width: 100px;

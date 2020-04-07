@@ -1,0 +1,246 @@
+/* .mainindex{
+  background-color:#FFFFFF;
+  width:100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.navindex{
+  font-family: "Tomorrow", sans-serif;
+  font-size:30px;
+  position: absolute;
+  height:50px;
+  width:100%;
+}
+.boxfloatindex{
+  position:absolute;
+  height:200px;
+  width:80%;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  top:280px;
+  left:40px;
+  box-sizing:border-box;
+}
+.bfleftindex{
+  position: relative;
+  height:100%;
+  width:350px;
+  background-color:#F2F2F2;
+  float: left;
+}
+.bfupperindex{
+  position: relative;
+  width:100%;
+  height:60px;
+  background-color: #FFFFFF;
+  font-size:23px;
+  
+}
+.trainlogoindex{
+  margin-left:20px;
+  margin-top: 20px;
+  float:left;
+}
+.trainlogofirstindex{
+  margin-left:20px;
+  width:200px;
+  height:50px;
+}
+.traintextindex {
+  margin-left:12px;
+  margin-top:12px;
+  float: left;
+ 
+}
+.cycleindex{
+  width:100;
+  height:100px;
+  border-radius:50%;
+  background-color:gradient(90deg, #EC7AB7 14%, #EC7A7A 100%);
+}
+.fromindex{
+  display:inline-block;
+  font-weight:bold;
+  margin-left:20px;
+  margin-bottom:10px;
+}
+.textfromindex{
+  margin-left:20px;
+  border-radius:8px;
+  width:400px;
+  margin-bottom:10px;
+  outline: none;
+}
+.textdepartureindex {
+  margin-left: 20px;
+  border-radius: 8px;
+  width:200px;
+  outline: none;
+  float: left;
+}
+.exchangelogoindex{
+  width:40px;
+  height:40px;
+  left:820px;
+  position: absolute;
+  top:80px;
+  cursor: pointer;
+}
+
+.checkppindex{
+  margin-left:30px;
+  width:15px;
+  height:15px;
+}
+.fromdestinationindex{
+   position:absolute;
+   left:1000px;
+   top:333px;
+   font-weight: bold;
+}
+.textdesindex {
+  width: 400px;
+  outline: none;
+  position:absolute;
+  left:1000px;
+  top:368px;
+  border-radius: 8px;
+}
+.adultindex {
+  position: absolute;
+  left: 1000px;
+  top: 460px;
+  font-weight: bold;
+}
+
+.ageselect1index{
+  width: 100px;
+  outline: none;
+  position: absolute;
+  left: 1000px;
+  top: 445px;
+  border-radius: 8px;
+  text-align:center;
+}
+.adultindex {
+  position: absolute;
+  left: 1000px;
+  top: 412px;
+  font-weight: bold;
+}
+
+.ageselect2index{
+  width: 100px;
+  outline: none;
+  position: absolute;
+  left: 1200px;
+  top: 445px;
+  border-radius: 8px;
+  text-align:center;
+}
+.babyindex {
+  position: absolute;
+  left: 1200px;
+  top: 412px;
+  font-weight: bold;
+}
+.searchindex {
+  position: absolute;
+  left: 1350px;
+  top: 434px;
+  font-weight: bold;
+  background-color:#EC7A7A;
+  border-radius:12px;
+  color:white;
+} */
+.passegerindex{
+  position: absolute;
+  top:500px;
+  background-color:#EC7A7A;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  font-weight:bolder;
+  font-size:20px;
+  height: 100px;
+  font-weight: bold;
+  margin-bottom:40px;
+  padding:30px;
+  width:90%;
+  left :95px;
+  font-weight:bolder;
+  font-size:20px;
+  
+}
+.trainNameindex{
+  margin-left:-20px;
+}
+.departindex {
+  margin-left:20px;
+}
+.arriveindex{
+ margin-left:20px;
+}
+.durationindex{
+margin-left:-40px;
+}
+.priceindex{
+ margin-left:-30px;
+}
+
+.show1index{
+  height: 100px;
+  border: 2px solid grey;
+  background-color: white;
+  position: relative;
+  font-weight: bold;
+  margin-bottom:10px;
+  padding:30px;
+  width:90%;
+  top:200px;
+  left :95px;
+  font-weight:bolder;
+  font-size:20px;
+
+}
+.v11index{
+  float: left;
+  margin-left: 120px;
+  margin-right: 170px;
+  margin-top:10px;
+}
+
+.v12index {
+  float: left;
+  margin-left: 45px;
+  margin-top:10px;
+
+}
+
+.v13index {
+  float: left;
+  margin-left: 200px;
+  margin-top:10px;
+}
+
+.v14index {
+  float: left;
+  margin-left: 169px;
+  margin-top:10px;
+}
+
+.v15index {
+  float: left;
+  margin-left: 189px;
+  margin-top:10px;
+  color: #EC7A7A;
+}
+.footer {
+  background: linear-gradient(180deg, #ec7a7a 0%, #ec7ab7 100%);
+  width: 100%;
+  height: 70px;
+  top: 630px;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.8);
+}

@@ -5,57 +5,12 @@ import Header from "./header";
 import ModalLogin from "./modalLogin";
 import Register from "./Register";
 import {Link} from "react-router-dom"
-
+import NavHeader from "../navHeader/navHeader";
 export default class MyticketApproved extends Component {
   render() {
     return (
       <div className="bckgrApproved">
-        <div className="navApproved">
-          <img
-            src={require("../../img/trainlogo.png")}
-            className="trainlogofirstApproved"
-          ></img>
-          <div class="dropdownAP">
-            <div className="userAP">Harttonz</div>
-            <img
-              src={require("../../img/account.png")}
-              className="dropbtnAP"
-              alt="dropbtnAP"
-            ></img>
-            <div class="dropdown-contentAP">
-              <div className="link1AP">
-                <Link to="/myticket">
-                  <img
-                    src={require("../../img/ticket11.png")}
-                    className="ticketbuttonAP"
-                    alt="ticketbuttonAP"
-                  ></img>
-                </Link>
-                <div>My Ticket</div>
-              </div>
-              <div className="link1AP">
-                <Link to="/payment">
-                  <img
-                    src={require("../../img/payment11.png")}
-                    className="paymentbuttonAP"
-                    alt="paymentbuttonAP"
-                  ></img>
-                </Link>
-                <div>Payment</div>
-              </div>
-              <div className="link1AP">
-                <Link to="user">
-                  <img
-                    src={require("../../img/logout.png")}
-                    alt="logoutbuttonAP"
-                    className="logoutbuttonAP"
-                  ></img>
-                </Link>
-                <div className="logouttextAP">Logout</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <NavHeader />
         <div className="myticketApproved">My Ticket</div>
         <div className="mytktApproved">
           <img

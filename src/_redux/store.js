@@ -1,9 +1,20 @@
 import {combineReducers,createStore,applyMiddleware} from "redux";
-import{logger,promise} from "./middleware";
-import {userSignIn} from "../_reducers/user";
+import{promise,logger} from "./middleware";
+import { signIn, register,checkLogin} from "../_reducers/userR";
+import allTicketR  from "../_reducers/traindataR";
+import typeTrainR from "../_reducers/typeTrainR";
+import orderR from "../_reducers/OrderR";
+import ticketR from "../_reducers/ticketR";
+
+
 const rootReducers = combineReducers({
-    userSignIn
-})
+  signIn,
+  register,
+  checkLogin,
+  orderR,
+  ticketR,
+  typeTrainR
+});
 
 const store = createStore(rootReducers,applyMiddleware(promise,logger));
 export default store;

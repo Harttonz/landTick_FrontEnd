@@ -1,98 +1,140 @@
-import React, { Component } from "react";
+import React, { Component,Fragment } from "react";
+import {Row,Col} from "react-bootstrap";
 import "./userIndex.css";
+import NavSearch from "../user/NavSearch";
 import Footer from "./footer";
 import Header from "./header";
+import {Redirect} from "react-router-dom";
 import ModalLogin from './modalLogin';
+import { connect } from "react-redux";
+import {GetIDR,intervalTime,timeRange} from "../functional/utilities";
+import { getTicketsToday } from "../../_actions/ticketA";
 import Register from "./Register";
-export default class User extends Component {
-  render() {
-    return (
-      <div className="mainindex">
-        <div className="navigationIndex">
-          <img
-            src={require("../../img/trainlogo.png")}
-            className="trainlogofirstindex"
-          ></img>
-          <Register />
-          <ModalLogin />
-        </div>
-        <Header />
-        <Footer />
-        <div className="boxfloatindex">
-          <div className="bfleftindex">
-            <div className="bfupperindex">
-              <img
-                src={require("../../img/train.png")}
-                className="trainlogoindex"
-              ></img>
-              <p className="traintextindex">The Train's ticket</p>
+ class User extends Component {
+   constructor() {
+     super();
+     this.state = {
+       startStation: "",
+       date: "",
+       dateTo: "",
+       destinationStation: "",
+       formErr: false
+     };
+   }
+   
+
+  //  sendQtyToHome = () => {
+  //    let qty = this.state.qtyAdult + this.state.qtyBaby;
+  //    this.props.handleTotalQty(qty);
+  //  };
+
+  //  handleChangeQtyAdultMin = () => {
+  //    if (this.state.qtyAdult > 0) {
+  //      this.setState(
+  //        {
+  //          qtyAdult: this.state.qtyAdult - 1
+  //        },
+  //        () => this.sendQtyToHome()
+  //      );
+  //    }
+  //  };
+
+  //  handleChangeQtyAdultAdd = () => {
+  //    this.setState(
+  //      {
+  //        qtyAdult: this.state.qtyAdult + 1
+  //      },
+  //      () => this.sendQtyToHome()
+  //    );
+  //  };
+  //  handleChangeQtyBabyMin = () => {
+  //    if (this.state.qtyBaby > 0) {
+  //      this.setState(
+  //        {
+  //          qtyBaby: this.state.qtyBaby - 1
+  //        },
+  //        () => this.sendQtyToHome()
+  //      );
+  //    }
+  //  };
+
+  //  handleChangeQtyBabyAdd = () => {
+  //    this.setState(
+  //      {
+  //        qtyBaby: this.state.qtyBaby + 1
+  //      },
+  //      () => this.sendQtyToHome()
+  //    );
+  //  };
+   componentDidMount() {
+         const date = new Date();
+         const dateNow = `${date.getFullYear()}-${("0" +(date.getMonth() + 1)).slice(-2)}-${("0" + date.getDate()).slice(-2)}`;
+         this.props.getTicketsToday(dateNow);
+   }
+   render() {
+    const { ticketToday} = this.props.tickets;
+    console.log('content of ticket data today',ticketToday)
+    console.log('content of Qty',this.props.qty)
+
+     return (
+       <div className="mainindex">
+         <div className="navigationIndex">
+           <img src={require("../../img/trainlogo.png")}className="trainlogofirstindex"/>
+           <Register />
+           <ModalLogin />
+         </div>
+         <Header />
+         <NavSearch handleTotalQty={this.handleTotalQty}/>
+      <div>
+         <Fragment>
+            <div className="ListTicketTitle">
+                <div className="ListTicketContentTitle">The train's Name</div>
+                <div className="ListTicketContentTitle">Departure</div>
+                <div className="ListTicketContentTitle">Arrival</div>
+                <div className="ListTicketContentTitle">Duration</div>
+                <div className="ListTicketContentTitle">Price /person </div>
             </div>
-          </div>
-          <div className="trainindex">The Train</div>
-          <div className="fromindex">From</div>
-          <br></br>
-          <input type="text" className="textfromindex" placeholder="Jakarta"></input>
-          <br></br>
-          <div className="fromindex">Departure Date</div>
-          <br></br>
-          <input
-            type="text"
-            className="textdepartureindex"
-            placeholder="DD-MM-YYYY"
-          ></input>
-          <input type="checkbox" className="checkppindex"></input> Round Trip
-          <img
-            src={require("../../img/rounded.png")}
-            className="exchangelogoindex"
-          ></img>
-        </div>
-        <div className="fromdestinationindex">Destination</div>
-        <br></br>
-        <input type="text" className="textdesindex" placeholder="Surabaya"></input>
-        <div className="adultindex">Adult</div>
-        <br></br>
-        <select className="ageselect1index">
-          <option>1</option>
-          <option>2</option>
-        </select>
-        <div className="babyindex">Baby</div>
-        <br></br>
-        <select className="ageselect2index">
-          <option>1</option>
-          <option>2</option>
-        </select>
-        <button type="button" className="searchindex">
-          Search Ticket
-        </button>
-        <div className="passegerindex">
-          <div className="trainNameindex">The Train's Name</div>
-          <div className="departindex">Departure</div>
-          <div className="arriveindex">Arrival</div>
-          <div className="durationindex">Duration</div>
-          <div className="priceindex">Price /person </div>
-        </div>
-        <div className="show1index">
-          <div className="v11index">Argo Wilis</div>
-          <div className="v12index">05.00</div>
-          <div className="v13index">10.00</div>
-          <div className="v14index">5h 5m</div>
-          <div className="v15index">Rp 250.000</div>
-        </div>
-        <div className="show2index">
-          <div className="v1index">Wilis Argo</div>
-          <div className="v2index">10.00</div>
-          <div className="v3index">05.00</div>
-          <div className="v4index">5h 5m</div>
-          <div className="v5index">Rp 100.000</div>
-        </div>
-        <div className="show3index">
-          <div className="v1index">Anjasmoro</div>
-          <div className="v2index">10.00</div>
-          <div className="v3index">05.00</div>
-          <div className="v4index">5h 5m</div>
-          <div className="v5index">Rp 100.000</div>
-        </div>
-      </div>
-    );
-  }
-}
+        </Fragment>
+           {ticketToday.length > 0 ?(
+              <Fragment>
+                {ticketToday.map((value,index)=>(
+                <div className="ListTicket" key={index}>
+                   <div className="ListTicketContent">{value.name}</div>
+                   <div className="ListTicketContent">{value.start_time}
+                      <br></br>
+                      <span className="ContentStartStation">{value.start_station}</span>
+                   </div>
+                   <div className="ListTicketContent">{value.arrival_time}
+                      <br></br>
+                      <span className="ContentStartStation">{value.destination}</span>
+                   </div>
+                    <div className="ListTicketContent">{intervalTime(value.arrival_time,value.start_time)}</div>
+                   <div className="ListTicketContent">{GetIDR(value.price)} </div>
+               </div>
+                  ))}
+              </Fragment>
+           ):
+           (
+             <h5>
+              <center>Ticket is Unavailable Today </center>
+             </h5>
+           )}
+         </div>
+         {/* <Footer/> */}
+       </div>
+     );
+   }
+ }
+
+const mapStateToProps = state => {
+  return {
+    tickets: state.ticketR
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    getTicketsToday: dateNow => dispatch(getTicketsToday(dateNow))
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(User);

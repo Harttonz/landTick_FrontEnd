@@ -233,6 +233,7 @@
 }
 .searchbuttonIndex {
     width: 28px;
-    height: 28px;
+    height:28px;
     cursor: pointer;
+    margin:auto 8px;
 }
