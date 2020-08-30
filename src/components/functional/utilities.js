@@ -44,7 +44,7 @@ exports.intervalTime=(time1, time2)=> {
   let minute = diff - hour * 60;
 
   if (hour < 0) hour = hour * -1;
-  let time = hour + " h" + "" +  minute + " m";
+  let time = hour+"h"+" "+minute+"m";
   return time;
 }
 exports.timeRange = (dateStart, dateEnd) =>{

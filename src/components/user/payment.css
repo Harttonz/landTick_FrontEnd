@@ -1,331 +1,222 @@
-.bckgrdmainmenuPayment{
-    background-color: #FFFFFF;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    position:fixed;
-    float: left;
+.payment-container{
+    margin:auto;
+    width:98%;
+    padding:0.2rem 2rem;
+    margin:.8rem 0.8rem;
+    border:.1rem solid #808080;
+    position:relative;
+}
+.payment-container ul{
+    padding:0;
+    list-style-type:none;
+}
+.payment-container ul li:nth-child(1){
+    padding-bottom:.4rem;
+}
+.payment-container ul > li:nth-child(2){
+    display:flex;
+    justify-content:space-around;
+}
+/* left session */
+.payment-container  .payment-info-user{
+   flex:1 1 45rem;
+   padding:0 0.8rem;
+}
+.payment-container  .payment-info-user > div{
+    margin-bottom:1rem;
+    border-radius:0.5rem;
+ }
+.payment-container  .payment-info-user > div:nth-child(1){
+    border:0.1rem solid #D0D0D0;
+    display:flex;
+    align-items:center;
+    padding:0.8rem;
+    font-size:.6rem;
+    background:#eeeeee;
+}
+.payment-container  .payment-info-user > div:nth-child(1) > img{
+    max-width:3rem;
+    max-height:3rem;
+} 
+.payment-container  .payment-info-user > div:nth-child(1) > div > div{
+    margin:.4rem .5rem;
+    font-size:1rem;
+} 
+
+.payment-container  .payment-info-user > div.invoice-user-info{
+    border:0.1rem solid #D0D0D0;
+    padding:1rem;
 }
 
-.myticketpayment {
-    position: relative;
-    top: 40px;
-    left: 50px;
-    font-size:28px;
-    font-weight: bolder;
+.payment-container  .payment-info-user > div.invoice-user-info > img{
+    max-width:12rem;
+    max-height:2rem;
+    margin-left:-1rem;
+    margin-top:-1rem;
+    margin-bottom:1rem;
 }
-.detailsPrice{
-    position: relative;
-    top: 70px;
-    left:-60px;
-    margin-bottom:20px;
-    font-size: 28px;
-    font-weight: bolder;
-}
-.notespy1{
-    width:700px;
-    height:160px;
-    background-color:#EEEEEE;
-    position: relative;
-    left:53px;
-    top:40px;
-    border:2px solid lightgrey;
-    border-radius:8px;
-}
-.notespy2 {
-    width: 700px;
-    height: 160px;
-    background-color:white;
-    position: relative;
-    left: 53px;
-    top: 60px;
-    border: 2px solid lightgrey;
-    border-radius:8px;
-}
-.dangerpayment{
-    width:45px;
-    height:45px;
-    margin-left:40px;
-    margin-top:30px;
-    position: relative;
-}
-.infopayment{
-    position:absolute;
-    margin-left:100px;
-    margin-top:45px;
-    margin-bottom:50px;
-}
-.nopayment{
-    font-weight: bold;
-    position: relative;
-    top:100px;
-    left:100px;
-}
- .myticketlogopayment {
-    width: 200px;
-    height: 40px;
-    background-color:white;
-}
-.pcicpy {
-    position: relative;
-    width:220px;
-    left:15px;
-    top:26px;
-    font-size:15px;
-    font-weight:bold;
-}
-.noCicpy {
-    position: relative;
-    ;
-    left: 15px;
-    top: -10px;
-    color: darkgrey;
-}
-.pOrderspy {
-    position: relative;
-    left:225px;
-    top:5px;
-    font-size:15px;
-    font-weight:bold;
-}
-.noOrderspy {
-    position: relative;
-    left: 225px;
-    top: -36px;
-    color: darkgrey;
-}
-.pHppy {
-    position: relative;
-    left: 340px;
-    top:-16px;
-    font-size: 15px;
-    font-weight:bold;
-}
-.noHppy {
-    position: relative;
-    left: 340px;
-    top: -60px;
-    color: darkgrey;
-    float: left;
-}
-
-.pemail {
-    position: relative;
-    left:470px;
-    top: -37px;
-    font-size: 15px;
-    font-weight:bold;
-}
-
-.noEmailpy {
-    position: absolute;
-    left: 470px;
-    top: 120px;
-    color: darkgrey;
-}
-
-.hrlinepy {
-    width: 696px;
-    border: 1px solid lightgrey;
-    position: relative;
-    top:-20px;
-}
-.notespy3 {
-    width: 400px;
-    height: 120px;
-    background-color: white;
-    position: relative;
-    left: 53px;
-    top: 80px;
-    border: 2px solid lightgrey;
-    border-radius: 8px;
-}
-.notes3pyargo {
-    position: relative;
-    margin-left:20px;
-    margin-top:19px;
-    font-weight:bold;
-    font-size:15px;
-}
-.notes3pyRp{
-    position: relative;
-    margin-left:260px;
-    margin-top:-24px;
-}
-.notes3pyboxgrey{
+.payment-container  .payment-info-user > div.invoice-user-info > table{
     width:100%;
-    height:50px;
-    margin-top:30px;
-    background-color:lightgrey;
-    border-bottom-left-radius:8px;
-    border-bottom-right-radius:8px;
-    position:absolute;
-    float: left;
+    font-size:1.2rem;
 }
-.notes3pytotal{
-    position: relative;
-    margin-left:20px;
-    margin-top:18px;
-    font-weight:bold;
-    font-size:15px;
-}
-.notes3pytotalrp{
-    position: relative;
-    margin-left:260px;
-    margin-top:-24px;
-    font-weight:bolder;
-}
-.boxImageuploaded{
-    width: 300px;
-    height: 200px;
-    background-color: white;
-    position: relative;
-    left: 500px;
-    top: -140px;
-    border: 2px solid lightgrey;
-}
-.proofPy {
-     width:100%;
-     height:100%;
-}
-
-
-.notespaynow{
-    width:400px;
-    height: 35px;
-    font-size:15px;
-    position: relative;
-    left:540px;
-    top:100px;
-}
-.piecesofpayments{
-    position: absolute;;
-    left:900px;
-    top:160px;
-    width:500px;
-    height:400px;
-    background-color:white;
-    border-radius:12px;
-    border: 2px solid lightgrey;
+.payment-container  .payment-info-user > div.invoice-user-info > table  tr:nth-child(1){
+    border-bottom:0.1rem solid #D0D0D0;
     
 }
-.upperpiecesofpayments{
-    background: #EEEEEE;
-    width:100%;
-    height:100px;
-    border-top-left-radius:12px;
-    border-top-right-radius:12px;
-}
-.depTimepayment {
-    position: absolute;
-    left:100px;
-    top:220px;
-    font-weight: bold;
-}
-.depdatetimepayment {
-    position: absolute;
-    left:100px;
-    top: 250px;
-    color: darkgrey;
-}
-.arrvTimepayment {
-    position: absolute;
-    left: 100px;
-    top: 330px;
-    font-weight: bold;
-}
 
-.arrvdatetimepayment {
-    position: absolute;
-    left: 100px;
-    top: 360px;
-    color: darkgrey;
+/* upper right side*/
+.payment-container .payment-info-product{
+   flex:1 1 30rem;
+   border:0.1rem solid #D0D0D0;
+   background:#D0D0D0;
 }
-.linethroughpayment {
-    width: 50px;
-    height: 190px;
-    position: absolute;
-    top: 200px;
-    left: 30px;
-}
-.depPlacepayment {
-    position: absolute;
-    left:300px;
-    top: 220px;
-    font-weight: bold;
-}
-
-.notdepPlacepayment {
-    position: absolute;
-    left:300px;
-    top: 250px;
-    color: darkgrey;
-}
-
-.destPlacepayment {
-    position: absolute;
-    left:300px;
-    top: 330px;
+.payment-container .payment-info-product .upper-right-side{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;   
+    border-bottom:0.1rem solid #111;
+ }
+ .payment-container .payment-info-product .upper-right-side > div > p{
+    padding:0;
+    margin:0;
+ }
+ .payment-container .payment-info-product .upper-right-side > div > p:nth-child(1){
+    font-size:2rem;
     font-weight:bold;
+    padding-left:.6rem;
+ }
+ .payment-container .payment-info-product .upper-right-side > div > p:nth-child(2){
+    font-size:1.1rem;
+    font-weight:200;
+    padding-left:.6rem;
+ }
+ .payment-container .payment-info-product .upper-right-side > img {
+    max-width:5rem;
+    max-height:5rem;
+    border:0.1rem solid #111;
+ }
+/* lower right side*/
+.lower-right-side{
+   background:#FFFFFF;
+}
+ .lower-right-side > div > div:nth-child(1){
+    font-weight:bold;
+    font-size:1.6rem;
+    padding-left:.6rem;
+ }
+  .lower-right-side > div > div:nth-child(2){
+   font-weight:400;
+   font-size:1.2rem;
+   padding-left:.6rem;
+}
+  .lower-right-side > div:nth-child(2){
+    display:flex;
+    padding:.5rem 0;
+ }
+.lower-right-side > div:nth-child(2) > div {
+   height:10rem; 
+}
+.lower-right-side > div:nth-child(2) > div > img{
+   width:1.4rem;
+   height:100%;
+}
+.lower-right-side > div:nth-child(2) > div:nth-child(2){
+   display:flex;
+   width:100%;
+   height:100%;
+   justify-content:space-between;
+   padding:0 1rem;
+}
+.lower-right-side > div:nth-child(2) > div > div{
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   justify-content:space-between;
+   height:10rem;
+}
+.lower-right-side > div:nth-child(2) > div > div > div > p:nth-child(1){
+   font-weight:bold;
+   font-size:1.1rem;
+   margin:0;
+   padding:0;
+}
+.lower-right-side > div:nth-child(2) > div > div > div > p:nth-child(2){
+   font-weight:200;
+   font-size:1.1rem;
+   margin:0;
+   padding:0;
+}
+  
+/* bottom styling */
+ .payment-container .invoice-title-price{
+     width:60%;
+     padding:0.8rem;
+     margin-top:-6rem;
+ }
+ .payment-container .invoice-detail-price {
+     display:flex;
+     justify-content:space-between;
+     flex-wrap:wrap;
+ }
+ .payment-container .invoice-detail-price > div{
+    margin:0.4rem .2rem 0.5rem 0;
+}
+/* left side  */
+.invoice-detail-price > div:nth-child(1){
+    flex:1 1 10rem;
+ }
+.invoice-detail-price > div:nth-child(1) > div{
+    border:0.1rem solid #D0D0D0;
+    border-radius:0.3rem;
+    margin-bottom:1.2rem;
+ }
+ .invoice-detail-price > div:nth-child(1) > div > div:nth-child(1){
+    font-size:1.5rem;
+    height:7rem;
+    padding:1rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+ }
+ .invoice-detail-price > div:nth-child(1) > div > div:nth-child(2){
+    font-size:1.5rem;
+    height:4rem;
+    padding:1rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#D0D0D0;
+ }
+ .invoice-detail-price > div:nth-child(1) > button{
+    width:100%;
+ }
+
+ /* right side */
+.invoice-detail-price > div:nth-child(2){
+    flex:1 1 8rem;
+}
+.invoice-detail-price > div:nth-child(2) > form{
+   display:flex;
+   flex-direction:column;
+   /* align-items:center; */
+   width:100%;
+   padding-bottom:.2rem;
+}
+.invoice-detail-price > div:nth-child(2) > form > img{
+    width:100%;
+    height:18rem;
+    border:0.2rem solid #808080;
+    border-radius:.6rem;
 }
 
-.notdestPlacepayment {
-    position: absolute;
-    left:300px;
-    top: 360px;
-    color: darkgrey;
-}
 
-.TheTrain {
-    position: relative;
-    left:30px;
-    font-size: 35px;
-    top: 10px;
-}
-.datetimenowpayment {
-    position: relative;
-    left: 30px;
-    top: 10px;
-    font-size:20px;
-    color: darkgrey;
-}
-.day{
-    font-weight:bolder;
-}
-.argopayment {
-    font-weight: bold;
-    font-size: 20px;
-    position: relative;
-    left: 30px;
-    top: 30px;
-}
 
-.typeArgopayment {
-    width: 120px;
-    height: 20px;
-    position: relative;
-    left: 30px;
-    top: 40px;
-}
-.payScannerBox{
-    width:90px;
-    height:90px;
-    border:2px solid lightgrey;
-    position: absolute;
-    top:4px;
-    left:400px;
-    box-sizing:border-box;
-}
-.scannerPict{
-    width:90px;
-    height:90px;
-}
-.pendingComponent{
-    position: absolute;
-    width:300px;
-    top:38px;
-    z-index:9999;
-    left:-52px;
-    outline:none;
-}
+
+
+
+
+
+
+
+
+

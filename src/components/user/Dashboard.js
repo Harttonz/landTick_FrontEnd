@@ -1,92 +1,132 @@
-import React, { Component,Fragment } from "react";
-import NavHeader from "../navHeader/navHeader";
-import {GetIDR,intervalTime,timeRange} from "../functional/utilities";
-import "./Dashboard.css";
-import Footer from "./footer";
-import Header from "./header";
-import NavSearch from "./NavSearch";
-import { getTicketsToday } from "../../_actions/ticketA";
-import { connect } from "react-redux";
-import { BaseUrl, headerAuthorization } from "../../config/headerToken";
-import axios from "axios";
-import Buy from "../user/BuyTicketForm";
- class Dashboard extends Component {
-        componentDidMount() {
-          const date = new Date();
-          const dateNow = `${date.getFullYear()}-${("0" +(date.getMonth() + 1)).slice(-2)}-${("0" + date.getDate()).slice(-2)}`;
-          this.props.getTicketsToday(dateNow);
-        }
-  //  Buy = async () => {
-  //    try {
-  //      await axios({
-  //        method: "GET",
-  //        url: `${BaseUrl}/orders/${this.props.data.id}`,
-  //        headers: headerAuthorization
-  //      });
-  //      window.location.href = "http://localhost:3000/admin";
-  //    } catch (err) {
-  //      console.log(err.message);
-  //    }
-  //  };
-   render() {
-    const { ticketToday} = this.props.tickets;
+import React, {useEffect, useState} from "react";
+import "./dashboard.css";
+import Banner from "./bannerScreen";
+import UserProduct from "./homeScreen";
+import { useSelector,useDispatch} from "react-redux";
+import { listProduct } from '../../_actions/productAction';
+
+export default function Dashboard(props){
+  const userSignin = useSelector( state => state.userSignin);
+  const {userInfo} = userSignin;
+  const dispatch = useDispatch();
+  const[adultQty,setAdultQty]=useState(0);
+  const[babyQty,setBabyQty]=useState(0);
+  const[start_station,setStart_station]=useState('');
+  const[destination,setDestination]=useState('');
+  const[startDate,setStartDate]=useState('');
+  const[endDate,setEndDate]=useState('');
+  const MaxAdultQty = () => {
+      setAdultQty(adultQty+1)
+  }
+  const MinAdultQty = () =>{
+    if(adultQty > 0){
+      setAdultQty(adultQty-1);
+    }
+  }
+  const MaxBabyQty = () => {
+    setBabyQty(babyQty+1)
+  }
+  const MinBabyQty = () =>{
+    if(babyQty > 0){
+      setBabyQty(babyQty-1);
+    }
+  }
+  const handleAmountQty = () =>{
+    const qty = babyQty + adultQty;
+    return qty
+  }
+  const reverseStation = () =>{
+    let from = start_station;
+    let dest = destination;
+    setStart_station(dest);
+    setDestination(from)
+  }
+  const search = () =>{
+      const params = {
+        date_gte:startDate,
+        date_lte:endDate,
+        start_station:start_station,
+        destination:destination
+      }
+      console.log('data',params)
+      dispatch(listProduct(params))
+  }
+   useEffect(()=>{
+     handleAmountQty()
+     if(userInfo && userInfo.isAdmin){
+       props.history.push('/listOrder')
+     }
+   },[userInfo])
      return (
-       <div className="bckgrdmainmenuDashboard">
-         <NavHeader />
-         <Header />
-         <NavSearch/>
-       <div>
-         <Fragment>
-            <div className="ListTicketTitle">
-                <div className="ListTicketContentTitle">The train's Name</div>
-                <div className="ListTicketContentTitle">Departure</div>
-                <div className="ListTicketContentTitle">Arrival</div>
-                <div className="ListTicketContentTitle">Duration</div>
-                <div className="ListTicketContentTitle">Price /person </div>
-                <div className="ListTicketContentTitle">Action</div>
-            </div>
-        </Fragment>
-           {ticketToday.length > 0 ? (
-              <Fragment>
-                {ticketToday.map((value,index)=>(
-                <div className="ListTicket" key={index}>
-                   <div className="ListTicketContent">{value.name}</div>
-                   <div className="ListTicketContent">{value.start_time}
-                   <br></br>
-                      <span className="ContentStartStation">{value.start_station}</span>
-                  </div>
-                   <div className="ListTicketContent">{value.arrival_time}
-                   <br></br>
-                      <span className="ContentStartStation">{value.destination}</span>
+        <div> 
+            <Banner/>
+            <div className="searchBox">
+                  <div className="left-searchBox">
+                    <div>    
+                        <img src={require("../../asset/train.png")}/>
+                        <div>The Train's ticket</div>
                     </div>
-                    <div className="ListTicketContent">{intervalTime(value.arrival_time,value.start_time)}</div>
-                   <div className="ListTicketContent">{GetIDR(value.price)}</div>
-                   <div className="BuyTicket"><Buy data={value}/></div>
-               </div>))}
-              </Fragment>
-           ):
-           (
-             <h5>
-              <center>Ticket is Unavailable Today </center>
-             </h5>
-           )}
-         </div>
-         {/* <Footer/> */}
+                  </div>
+                  <ul className="right-searchBox">
+                          <li><h1>The Train</h1></li>
+                          <li>
+                            <div>
+                                <div>From</div>
+                                <input type="text" placeholder="jakarta" value={start_station} onChange={(e)=>setStart_station(e.target.value)}/>
+                            </div> 
+                            <div>
+                                <img src={require("../../asset/rounded.png")} onClick={reverseStation}/>
+                            </div>                         
+                            <div>
+                              <div>Destination</div>
+                              <input type="text" placeholder="surabaya" value={destination} onChange={(e)=>setDestination(e.target.value)}/>
+                            </div>
+                          </li>
+                          <li>
+                              <div>
+                                <div>Departure Date</div>
+                                <div>
+                                  <input type="checkbox"/>
+                                  <label>Round Trip</label>
+                                </div>
+                              </div>
+                              <div>
+                                <div>Adult</div>
+                                <div>Baby</div>
+                              </div>  
+                          </li>
+                          <li>
+                                <div>
+                                    <div>
+                                    <input  type="date" name="firstDate" onChange={ (e) => setStartDate(e.target.value)}/>
+                                    </div>
+                                    - 
+                                    <div>
+                                    <input  type="date"  name="secondDate" onChange={ (e) => setEndDate(e.target.value)}/>
+                                    </div>
+                                </div>
+                                <div>
+                                      <div>
+                                          <button onClick={MinAdultQty}>-</button>
+                                          <div>{adultQty}</div>
+                                          <button onClick={MaxAdultQty}>+</button> 
+                                      </div>
+                                      <div>
+                                          <button onClick={MinBabyQty}>- </button>
+                                          <div>{babyQty}</div>
+                                          <button onClick={MaxBabyQty}>+</button>                               
+                                      </div>
+                                      <div>
+                                        <button type="submit" onClick={search} className="button primary">
+                                          Search Ticket
+                                          </button>
+                                      </div>  
+                                </div>
+                          </li>
+                      </ul>      
+              </div>   
+             <UserProduct handleAmountQty={handleAmountQty}/>
        </div>
      );
-   }
  }
-
-const mapStateToProps = state => {
-  return {
-    tickets: state.ticketR
-  };
-};
-
-const mapDispatchToProps = dispatch => {
-  return {
-    getTicketsToday: dateNow => dispatch(getTicketsToday(dateNow))
-  };
-};
-
-export default connect(mapStateToProps,mapDispatchToProps)(Dashboard);
+ 

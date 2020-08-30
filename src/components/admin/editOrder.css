@@ -1,0 +1,41 @@
+.form-edit-header{
+    display:flex;
+    justify-content:space-between;
+}
+.form-edit-header > img{
+    width:10rem;
+    height:2.3rem;
+    color:#2e8b5a;
+    font-size:1.5rem;
+    border:none;
+    outline:none;
+}
+.form-edit-header > button{
+    background:transparent;
+    color:#2e8b5a;
+    font-size:1.5rem;
+    border:none;
+    outline:none;
+}
+.form-edit-header > button:hover{
+    color:#ff0000;
+}
+.form-edit{
+    padding:0 0.8rem;
+}
+.edit-container{
+    padding:0 0.5rem;
+    list-style-type:none;
+    display:flex;
+    flex-direction:column;
+}
+.edit-container li{
+    margin:0.8rem 0;
+}
+.edit-container li:nth-child(6){
+    text-align:center;
+}
+ .rightLogoES {
+     max-width:10rem;
+     max-height:2rem;
+ }

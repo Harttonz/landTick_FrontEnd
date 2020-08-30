@@ -1,0 +1,63 @@
+.listOrder-container{
+    width:80%;
+    padding:1rem 1rem 4rem;
+    margin:2rem auto;
+    border:0.1rem solid #808080;
+    border-radius:0.3rem;
+    position:relative;
+}
+.listOrder-container table{
+    width:100%;
+    padding:1rem;
+}
+.listOrder-container table thead th{
+    padding:1rem;
+}
+.listOrder-container table tbody tr td{
+    padding:1rem;
+}
+.listOrder-container table thead td{
+    padding:1rem;
+}
+.listOrder-container table tbody tr:nth-child(odd){
+    background-color:#eaeaea;
+    border-bottom:0.1rem solid #808080;
+}
+.listOrder-container table tbody > tr{
+    border-bottom:0.1rem solid #808080;
+}
+.listOrder-container table tbody > tr > td:nth-child(6){
+    display:flex;
+    justify-content:start;
+    align-items:flex-start;
+}
+.listOrder-container table tbody > tr > td:nth-child(6) > button{
+    margin:1rem 2rem 1rem 0;
+    width:2rem;
+    height:2rem;
+    background:transparent;
+    border-radius:50%;
+    border:0.1rem #808080 solid;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+}
+.listOrder-container table tbody > tr > td:nth-child(6)  i{
+    position:absolute;
+}
+.listOrder-container table tbody > tr > td:nth-child(6) button:nth-child(1){
+    color:#2FC5F7;
+    font-size:1rem;
+}
+.listOrder-container table tbody > tr > td:nth-child(6) button:nth-child(2){
+    color:#0ACF83;
+    font-size:1rem;
+}
+.listOrder-container table tbody > tr > td:nth-child(6) button:nth-child(3){
+    color:#FF0742;
+    font-size:1rem;
+}
+
+

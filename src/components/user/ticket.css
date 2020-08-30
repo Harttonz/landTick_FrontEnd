@@ -1,0 +1,164 @@
+.ticket-container{
+    padding:1rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width:85%;
+    margin:0.5rem auto;
+}
+.ticket{
+    font-size:2rem;
+    margin:0.6rem 1rem;
+}
+.ticket-body{
+    flex:2 1 30rem;
+}
+.ticket-content{
+    border:0.1rem solid #808080;
+    margin-bottom:0.5rem;
+}
+
+.ticket-content > div:first-child{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-bottom:0;
+    width:100%;
+}
+.ticket-content > div:first-child > img {
+    max-width:12rem;
+    max-height:2rem;
+}
+.ticket-content > div:first-child > div{
+    margin:0;
+    padding:0;
+    display:block;
+    text-align:right;
+    font-size:1.5rem;
+    margin-right:1rem;
+    box-sizing:border-box;
+}
+.ticket-content > div:first-child > div > p:nth-child(1){
+    font-size:1.4rem;
+    font-weight:bold;
+}
+.ticket-content > div:first-child > div > p:nth-child(2){
+    margin-top:-1rem;
+}
+.ticket-content > div:first-child > div > p:nth-child(2){
+    font-weight:200;
+    font-size:1rem;
+}
+.ticket-content ul{
+    list-style-type:none;
+    padding:0;
+    margin-bottom:0.2rem;
+}
+.ticket-content ul > li{
+    display:flex;
+}
+.ticket-content ul > li > div{
+    margin:0 1rem;
+}
+.ticket-content ul > li > div:nth-child(1){
+    padding:0 1.9rem;
+}
+.ticket-content ul > li > div:nth-child(1) > div:nth-child(1){
+    font-weight:bold;
+}
+.ticket-content ul > li > div:nth-child(1) > div:nth-child(3){
+    color:#d87930;
+    margin-top:0.8rem;
+    border-radius:0.5rem;
+}
+.ticket-content ul > li > div:nth-child(2){
+    text-align:right;
+}
+.ticket-content ul > li > div:nth-child(2) > img{
+    max-width:3rem;
+    max-height:9rem;
+}
+.ticket-content ul > li > div:nth-child(3) > div{
+    padding:0 1.9rem;
+}
+.ticket-content ul > li > div:nth-child(3) > div:nth-child(2){
+    color:#6D6D6D;
+    font-size:0.9rem;
+}
+.ticket-content ul > li > div:nth-child(3) > div:nth-child(1){
+    font-weight:bold;
+}
+.ticket-content ul > li > div:nth-child(3) > div:nth-child(4){
+    color:#6D6D6D;
+    font-size:0.9rem;
+}
+.ticket-content ul > li > div:nth-child(3) > div:nth-child(3){
+    font-weight:bold;
+    margin-top:2rem
+}
+.ticket-content ul > li > div:nth-child(4) > div{
+    padding:0 1.9rem;
+}
+.ticket-content ul > li > div:nth-child(4) > div:nth-child(1){
+    font-weight:bold;
+}
+.ticket-content ul > li > div:nth-child(4) > div:nth-child(2){
+    color:#6D6D6D;
+    font-size:0.9rem;
+}
+.ticket-content ul > li > div:nth-child(4) > div:nth-child(3){
+    margin-top:2rem;
+    font-weight:bold;
+}
+.ticket-content ul > li > div:nth-child(4) > div:nth-child(4){
+    color:#6D6D6D;
+    font-size:0.9rem;
+}
+
+/* ticket price */
+.ticket-user-price{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:0.5rem 1rem;
+    margin-right:1rem;
+    padding:0.8rem;
+    border-radius:0.6rem;
+    border:0.1rem solid #808080;
+    background:#eaeaea;
+}
+.ticket-content .ticket-user-price div > div:nth-child(1){
+    font-weight:bold;
+}
+.ticket-content .ticket-user-price div > div:nth-child(2){
+    font-weight:200;
+}
+
+
+/* ticket user info */
+.ticket-user-info{
+   flex:1 1 20rem;
+}
+.ticket-user-info > div:nth-child(1){
+    width:96%;
+    margin:auto;
+    padding:0.2rem 1rem;
+    margin-bottom:0.8rem;
+    border-radius:0.5rem;
+    border:0.1rem solid #808080;
+}
+.ticket-user-info table{
+    width:100%;
+    padding:0.5rem 2rem;
+}
+.ticket-user-info table tr:nth-child(1){
+    border-bottom:0.1rem solid #808080;
+    padding-bottom:0.4rem;
+}
+.ticket-user-info table > tr > td{
+    padding-right:0.7rem;
+}
+/* button large */
+.large-button{
+    padding:0 0.8rem;
+}
