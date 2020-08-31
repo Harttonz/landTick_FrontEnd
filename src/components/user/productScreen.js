@@ -5,19 +5,19 @@ import {useSelector,useDispatch} from "react-redux";
 import {detailProduct} from "../../_actions/productAction";
 import {addToCart} from "../../_actions/cartAction";
 function ProductScreen (props){
+  const[newQty,setQty] = useState(1);
   const productDetail = useSelector( state => state.productDetails);
   const qty = props.location.search? props.location.search.split("=")[1]:0;
   const dispatch = useDispatch();
   const {product,loading,error} = productDetail;
-  const[newqty,setNewQty]=useState(1);
-
   const handleAddToCart = () =>{
     props.history.push('/signin?redirect=cart');
-    dispatch(addToCart(props.match.params.id,newqty))
+    dispatch(addToCart(props.match.params.id,newQty))
   }
-    
+  {console.log('qty',newQty)}
   useEffect(() => {
-    dispatch(detailProduct(props.match.params.id)) 
+    dispatch(detailProduct(props.match.params.id));
+    setQty(qty);
     },[])
 
       return (
@@ -69,9 +69,9 @@ function ProductScreen (props){
                     <div>{GetIDR(product.price)}</div>
                   </li>
                   <li>
-                  <div>Qty : <span>{newqty}</span></div>
+                  <div>Qty : <span>{newQty}</span></div>
                     <div>
-                      <select value={newqty} onChange={(e) => setNewQty(e.target.value)} disabled={product.qty < 2 }>
+                      <select value={newQty} onChange={(e) => setQty(e.target.value)} disabled={product.qty < 2 }>
                           { [...Array(product.qty).keys()].map( x => (
                               <option key={x+1} value={x+1}>{x+1}</option>
                           ))}       

@@ -8,7 +8,7 @@ const listProduct = (params) => async (dispatch) =>{
         });
         dispatch({type:PRODUCT_LIST_SUCCESS,payload:data});
     }catch(error){
-        dispatch({type:PRODUCT_LIST_FAIL,payload:error.response.data.error});
+        dispatch({type:PRODUCT_LIST_FAIL,payload:error.response.data.message});
     }
 }
 const detailProduct = (id) => async (dispatch) =>{

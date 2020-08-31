@@ -1,6 +1,6 @@
 import React, {useEffect,useState} from "react";
 import {useSelector,useDispatch} from "react-redux";
-import { signin } from "../../_actions/userAction";
+import { signin} from "../../_actions/userAction";
 import { Link } from "react-router-dom";
 function LoginScreen(props){
    const[username,setUsername]=useState('');

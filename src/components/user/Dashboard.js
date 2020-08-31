@@ -86,8 +86,7 @@ export default function Dashboard(props){
                               <div>
                                 <div>Departure Date</div>
                                 <div>
-                                  <input type="checkbox"/>
-                                  <label>Round Trip</label>
+                                  <input type="checkbox"/> Round Trip
                                 </div>
                               </div>
                               <div>

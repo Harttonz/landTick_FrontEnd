@@ -93,9 +93,7 @@ function CardScreen(props){
               <div className="ticket-user-price"> 
                   <div>
                     <div>Quantity</div>
-                    <div>{item.qty}
-                    
-                    </div>
+                    <div>{item.qty}</div>    
                   </div>
                   <div>
                     <div>price</div>

@@ -161,7 +161,7 @@ function PaymentScreen(props){
                             <div>
                                 <div>
                                     <span>{item.ticket.name} x {item.qty}</span>
-                                    <span>{GetIDR(item.ticket.price)}</span>
+                                    <span>({item.ticket.age}) {GetIDR(item.ticket.price)}</span>
                                 </div>
                                 <div>
                                     <span>Total</span>
