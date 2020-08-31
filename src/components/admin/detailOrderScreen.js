@@ -26,7 +26,7 @@ export default class DetailOrder extends Component{
                   <button onClick={() => this.handleClose()}>&times;</button> 
               </div>
               <div className="body-modal-detail-admin">
-                  <div>
+                  <div className="product-title-detail-admin">
                       <div>E-Ticket</div>
                       <div>
                         Invoice Code : INV000{this.props.data.id}
@@ -49,29 +49,28 @@ export default class DetailOrder extends Component{
                           </div>
                           <div className="product-info-detail-container-admin">
                             <img src={require("../../asset/linethrough.png")}/>
-                    
-                          <ul className="product-info-detail-admin">
-                            <li>
-                                <div>
-                                    <div>{this.props.data.ticket.start_time}</div>
-                                    <div>{this.props.data.ticket.start_date} st.</div>
-                                </div>
-                                <div>
-                                    <div>{this.props.data.ticket.start_station}</div>
-                                    <div>{this.props.data.ticket.start_station} st.</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div>{this.props.data.ticket.arrival_time}</div>
-                                    <div>{this.props.data.ticket.start_date}</div>
-                                </div>
-                                <div>
-                                    <div>{this.props.data.ticket.destination}</div>
-                                    <div> {this.props.data.ticket.destination} st.</div>
-                                </div>
-                            </li>
-                          </ul>
+                            <ul className="product-info-detail-admin">
+                                <li>
+                                    <div>
+                                        <div>{this.props.data.ticket.start_time}</div>
+                                        <div>{this.props.data.ticket.start_date} st.</div>
+                                    </div>
+                                    <div>
+                                        <div>{this.props.data.ticket.arrival_time}</div>
+                                        <div>{this.props.data.ticket.start_date}</div>
+                                    </div>   
+                                </li>
+                                <li> 
+                                    <div>
+                                        <div>{this.props.data.ticket.start_station}</div>
+                                        <div>{this.props.data.ticket.start_station} st.</div>
+                                    </div>
+                                    <div>
+                                        <div>{this.props.data.ticket.destination}</div>
+                                        <div> {this.props.data.ticket.destination} st.</div>
+                                    </div>
+                                </li>
+                            </ul>
                           </div>
                       </div>
                       <div className="product-image-admin">
