@@ -10,7 +10,7 @@ login and register for buying a ticket
 
 
 ### DASHBOARD
- ### 1.we provide ticket based on daily time
+ ### 1.we provide ticket based on daily date
  ### 2.you can find ticket by based range date and location 
  ### 3.when clicking a ticket,it will show detail ticket then you can buy how many as you want
 ![dashboard](https://user-images.githubusercontent.com/58875585/92963695-15bd6d00-f49d-11ea-813d-e80168d4f784.png)
