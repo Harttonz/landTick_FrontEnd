@@ -1,6 +1,6 @@
 
 ## LANDTICK 
-Landtick is a website that provides train tickets
+Landtick is a website that provides train tickets online
 
 ### `npm start`
 
