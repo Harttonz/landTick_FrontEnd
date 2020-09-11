@@ -7,7 +7,7 @@ Landtick is a website that provides train tickets online
 
 ### LOGIN
 login and register for buying a ticket
-https://github.com/harttono/landTick_FrontEnd/issues/1#issue-699647702
+![login](https://user-images.githubusercontent.com/58875585/92963006-00940e80-f49c-11ea-880b-a9c5a18940cf.png)
 
 ### `npm run build`
 
