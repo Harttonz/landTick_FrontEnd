@@ -22,6 +22,7 @@ login and register for buying a ticket
     ![listTicketUser](https://user-images.githubusercontent.com/58875585/92964963-2a026980-f49f-11ea-9867-9ccb972466d4.png)
  ### 2.on payment menu,you must upload payment as proof
  ![payment](https://user-images.githubusercontent.com/58875585/92965814-a9446d00-f4a0-11ea-881c-e7060b48f9a0.png)
+ ### 3.change picture profile,username
  
  
  
